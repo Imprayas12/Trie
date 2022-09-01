@@ -63,6 +63,7 @@ public class Trie {
                 System.out.print((char)i);
                 root = root.links[i];
                 display(root);
+                System.out.println();
             }
         }
     }
