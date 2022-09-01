@@ -57,4 +57,13 @@ public class Trie {
         }
         return true;
     }
+    static void display(Node root) {
+        for(int i = 0; i < root.links.length; i++){
+            if(root.links[i] != null){
+                System.out.print((char)i);
+                root = root.links[i];
+                display(root);
+            }
+        }
+    }
 }
